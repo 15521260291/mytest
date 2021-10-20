@@ -5,3 +5,5 @@ var testMaster = 'this is myMaster'
 var add = 'addMaster'
 var second = 'second'
 var third = 'third'
+var four = 'four'
+
