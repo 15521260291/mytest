@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="show">
+    <form class="formGroup" [formGroup]="formGroup" #form>
+      <input type="text" formControlName="name">
+      <ng-template myD></ng-template>
+    </form>
+  </div>
+  <div class="detail">
+    <label for="showName">显示名称</label><input [(ngModel)]="item.showName" id="showName" type="text">
+    <label for="fieldName">字段名</label><input [(ngModel)]="item.fieldName" id="fieldName" type="text">
+    <select [(ngModel)]="item.fieldType">
+      <option value="input">输入框</option>
+      <option value="select">选择框</option>
+      <option value="checkBox">多选</option>
+      <option value="radio">单选框</option>
+      <option value="textarea">多行文本</option>
+    </select>
+    <button (click)="confirm()">确定</button>
+    <button (click)="getFormValue()">获取formValue</button>
+  </div>
+</div>

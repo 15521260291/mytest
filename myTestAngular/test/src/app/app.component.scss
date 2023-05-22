@@ -1,0 +1,22 @@
+.container{
+  border: 1px solid black;
+  height: 100%;
+
+  .formGroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .show{
+    border: 1px solid red;
+    height: 70%;
+  }
+  .detail{
+    border: 1px solid rebeccapurple;
+    height: 30%;
+    text-align: center;
+    select{
+      margin-top: 12px;
+    }
+  }
+}
